@@ -13,7 +13,6 @@ const UserTripsCard = ({trip}) => {
       const getPlacePhoto = async() =>{
         try {
           const res = await getPlaceDetails(trip?.userSelection?.location)
-          console.log(res.data);
           const photoUrl = PhotoRefUrl.replace('{referenceId}', res.data.results[0].photos[0].photo_reference)
           setPhotoUrl(photoUrl)
         } catch (error) {

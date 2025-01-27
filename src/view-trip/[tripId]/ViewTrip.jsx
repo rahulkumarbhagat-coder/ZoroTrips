@@ -18,7 +18,6 @@ const viewTrip = () => {
         const docSnap = await getDoc(docRef)
 
         if (docSnap) {
-            console.log('document', docSnap.data());
             setTrip(docSnap.data())
         }
         else{

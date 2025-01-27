@@ -2,7 +2,6 @@ import React from 'react'
 import PlaceCard from './PlaceCard'
 
 const PlacesToVisit = ({trip}) => {
-  console.log(trip);
   
   return (
     <div>

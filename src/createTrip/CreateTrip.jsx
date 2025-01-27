@@ -45,7 +45,6 @@ const CreateTrip = () => {
       );
       const data = await response.json();
       setPrediction(data.predictions);
-      console.log(data);
     }
   };
 
@@ -94,11 +93,9 @@ const CreateTrip = () => {
       .replace("{traveller}", formData?.traveller)
       .replace("{totalDays}", formData?.totalDays);
 
-    console.log(FINAL_PROMPT);
 
     const result = await chatSession.sendMessage(FINAL_PROMPT);
     setLoading(false)
-    console.log(result?.response?.text());
     saveData(result?.response?.text())
   };
 
@@ -130,7 +127,6 @@ const CreateTrip = () => {
         Accept: 'Application/json'
       }
     }).then((res)=>{
-      console.log(res);
       localStorage.setItem('user', JSON.stringify(res.data))
       setOpenDialouge(false)
       onGenerateTrip()

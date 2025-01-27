@@ -36,7 +36,6 @@ const Header = () => {
         Accept: 'Application/json'
       }
     }).then((res)=>{
-      console.log(res);
       localStorage.setItem('user', JSON.stringify(res.data))
       setOpenDialouge(false)
       window.location.reload()

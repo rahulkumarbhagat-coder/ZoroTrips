@@ -24,9 +24,7 @@ const MyTrips = () => {
     setUserTrips([])
     querySnapshot.forEach((doc)=>{
       setUserTrips(prev=>[...prev, doc.data()])
-    })
-    console.log(userTrips);
-    
+    })    
   }
 
   useEffect(()=>{
