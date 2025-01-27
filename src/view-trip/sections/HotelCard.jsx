@@ -28,7 +28,7 @@ const HotelCard = ({hotel, index}) => {
             <div
               className="hover:scale-105 transition-all cursor-pointer my-5"
             >
-              <img src={photoUrl} alt="image" className="rounded-xl h-[200px] w-full object-cover" />
+              <img src={photoUrl?photoUrl:'/zoroLost.png'} alt="image" className="rounded-xl h-[200px] w-full object-cover" />
               <div className="my-2 flex flex-col gap-3">
                 <h2 className="font-medium">{hotel?.hotel_name}</h2>
                 <h2 className="font-xs text-gray-500">

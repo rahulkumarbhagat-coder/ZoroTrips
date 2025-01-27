@@ -53,7 +53,7 @@ const Header = () => {
   return (
     <div className="p-3 px-5 shadow-sm flex justify-between items-center">
       <div className="w-[120px] h-16 flex items-center">
-        <img className=" mx-3 mt-5 object-cover" src="./zoroLogo.png" alt="logo" />
+        <a href="/"><img className=" mx-3 mt-5 object-cover" src="./zoroLogo.png" alt="logo" /></a>
         </div>
       <div className="">
         {user ? (

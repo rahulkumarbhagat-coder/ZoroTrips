@@ -26,7 +26,7 @@ const InfoSection = ({trip}) => {
   }
   return (
     <div>
-      <img src={photoUrl} alt="image" className='h-[270px] w-full object-cover rounded-xl'/>
+      <img src={photoUrl?photoUrl:'/zoroLost.png'} alt="image" className='h-[270px] w-full object-cover rounded-xl'/>
       <div className="flex items-center justify-between">
         <div className="flex flex-col my-5 gap-2">
         <h2 className='font-bold text-2xl'>{trip?.userSelection?.location}</h2>
